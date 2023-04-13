@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    background: url('../img/bg.jpg') center center/cover no-repeat,  url('../img/mask.jpg') center center/cover no-repeat;
+    background-blend-mode: screen;
+    min-height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo {
+    position: relative;
+    color: #015b75;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+} 
+header .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url('../img/menu.png') center center/cover no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+.play {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 40px;
+    left: 50px;
+}
+.play img {
+    max-width: 40px;
+}
+.play span {
+    margin-left: 15px;
+    font-weight: 600;
+    color: #015b75;
+    letter-spacing: 1px;
+}
+.sci {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    text-decoration: none;
+    transform: scale(0.6);
+}
+.content {
+    padding: 50px;
+}
+.content h2 {
+    font-size: 9em;
+    line-height: 1em;
+    color: #015b75;
+    font-family: 'Kaushan Script', cursive;
+}
