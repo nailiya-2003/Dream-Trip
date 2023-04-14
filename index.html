@@ -18,10 +18,10 @@
     <section>
         <header>
             <a href="#" class="logo">Travel</a>
-            <div class="toggle"></div>
+            <div class="toggle active" onclick="toggleMenu()"></div>
         </header>
         <div class="content">
-            <h2>Dream <br>Trip</h2>
+            <h2>Dream<br>Trip</h2>
         </div>
         <div class="play">
             <img src="img/play.png" alt="play"><span>Play Video</span>
@@ -31,7 +31,24 @@
             <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
             <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
         </ul>
+        <div class="navigation active" onclick="toggleMenu()">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </section>
-
+    <script type="text/javascript">
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle')
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>

@@ -82,4 +82,48 @@ header .toggle {
     line-height: 1em;
     color: #015b75;
     font-family: 'Kaushan Script', cursive;
+    letter-spacing: 8px;
 }
+.navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+.navigation ul a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-size: 300;
+    transition: 0.2s;
+}
+.navigation.active {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+header .toggle.active{
+    background: url('../img/close.png') center center/cover no-repeat;
+    background-size: 30px;
+}
+.navigation ul a:hover {
+    color: rgb(255, 106, 136);
+}
+
+
+
